@@ -1,28 +1,25 @@
 package tests;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import pageobject.HomePage;
 import pageobject.LandingPage;
 import pageobject.LoginPage;
+import pageobject.RegistrationPage;
 import resources.Base;
 
-public class LoginTest extends Base{
-
+public class RegistrationTest extends Base{
+	
 	WebDriver driver;
 	
 	@Test
-	public void loginTest() throws Exception
+	public void RegistrationTest()
 	{
 		LandingPage landingpage=new LandingPage(driver);
-		LoginPage loginpage=landingpage.clickLoginBtn();
-		HomePage homepage=loginpage.loinToApplication(prop.getProperty("email"), prop.getProperty("password"));
-		Assert.assertTrue(homepage.loginSuccess(), "Failed to login to application");
-		homepage.logoutFromApplication();
+		RegistrationPage registrationpage=landingpage.clickRegistrationBtn();
+		registrationpage.doRegistration("testname", "testLastName", "emailInput@test.com", "112233", "test");
 	}
 	
 	@AfterTest
@@ -37,4 +34,7 @@ public class LoginTest extends Base{
 		driver=driverInitializer();
 		driver.get(prop.getProperty("url"));
 	}
+	
+	
+
 }

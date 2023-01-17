@@ -31,10 +31,15 @@ public class LandingPage {
 	{
 		myAccountBtn.click();
 		loginBtn.click();
-		return new LoginPage(driver);
-		
+		return new LoginPage(driver);	
 	}
 	
+	public RegistrationPage clickRegistrationBtn()
+	{
+		myAccountBtn.click();
+		registerBtn.click();
+		return new RegistrationPage(driver);
+	}
 	
-	
+
 }
