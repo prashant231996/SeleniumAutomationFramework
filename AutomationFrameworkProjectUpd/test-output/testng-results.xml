@@ -2,20 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10106" started-at="2023-01-16T16:53:15Z" finished-at="2023-01-16T16:53:26Z">
+  <suite name="Default suite" duration-ms="11138" started-at="2023-01-17T18:24:27Z" finished-at="2023-01-17T18:24:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10106" started-at="2023-01-16T16:53:15Z" finished-at="2023-01-16T16:53:26Z">
-      <class name="tests.LoginTest">
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:tests.LoginTest@51e5fc98]" name="loginTest" duration-ms="9015" started-at="2023-01-16T22:23:15Z" finished-at="2023-01-16T22:23:24Z">
+    <test name="Default test" duration-ms="11138" started-at="2023-01-17T18:24:27Z" finished-at="2023-01-17T18:24:38Z">
+      <class name="tests.RegistrationTest">
+        <test-method status="PASS" signature="initialiseDriver()[pri:0, instance:tests.RegistrationTest@7c469c48]" name="initialiseDriver" is-config="true" duration-ms="7536" started-at="2023-01-17T23:54:27Z" finished-at="2023-01-17T23:54:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LoginTest@51e5fc98]" name="tearDown" is-config="true" duration-ms="1070" started-at="2023-01-16T22:23:24Z" finished-at="2023-01-16T22:23:26Z">
+        </test-method> <!-- initialiseDriver -->
+        <test-method status="PASS" signature="RegistrationTest()[pri:0, instance:tests.RegistrationTest@7c469c48]" name="RegistrationTest" duration-ms="2206" started-at="2023-01-17T23:54:34Z" finished-at="2023-01-17T23:54:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegistrationTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.RegistrationTest@7c469c48]" name="tearDown" is-config="true" duration-ms="1352" started-at="2023-01-17T23:54:36Z" finished-at="2023-01-17T23:54:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.LoginTest -->
+      </class> <!-- tests.RegistrationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
