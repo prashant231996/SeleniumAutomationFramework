@@ -1,13 +1,19 @@
 package resources;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.apache.commons.io.FileUtils;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -39,6 +45,25 @@ public class Base {
 	   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	   
 	   return driver;
+	}
+	
+	public void getScreenshot(WebDriver driver,String testName)
+	{
+		//TakesScreenshot tsk=(TakesScreenshot)driver;
+		//File srcFile=tsk.getScreenshotAs(OutputType.FILE);
+		File SourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		String destFilePath=System.getProperty("user.dir")+"\\Screenshots\\"+testName+".png";
+		try {
+			FileUtils.copyFile(SourceFile, new File(destFilePath));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public WebDriver getDriver()
+	{
+		return driver;
 	}
 	
 	

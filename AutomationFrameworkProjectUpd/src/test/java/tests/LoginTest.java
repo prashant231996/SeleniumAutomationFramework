@@ -18,7 +18,7 @@ import resources.Base;
 
 public class LoginTest extends Base{
 
-	WebDriver driver;
+	public WebDriver driver;
 	Logger log;
 	
 	@Test(dataProvider ="LoginData" )
