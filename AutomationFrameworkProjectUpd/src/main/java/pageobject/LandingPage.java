@@ -19,13 +19,13 @@ public class LandingPage {
 	}
 	
 	@FindBy(xpath="//span[text()='My Account']")
-	WebElement myAccountBtn;
+	private WebElement myAccountBtn;
 	
 	@FindBy(linkText = "Register")
-	WebElement registerBtn;
+	private WebElement registerBtn;
 	
 	@FindBy(linkText = "Login")
-	WebElement loginBtn;
+	private WebElement loginBtn;
 	
 	public LoginPage clickLoginBtn()
 	{

@@ -47,7 +47,7 @@ public class Base {
 	   return driver;
 	}
 	
-	public void getScreenshot(WebDriver driver,String testName)
+	public String getScreenshot(WebDriver driver,String testName)
 	{
 		//TakesScreenshot tsk=(TakesScreenshot)driver;
 		//File srcFile=tsk.getScreenshotAs(OutputType.FILE);
@@ -59,6 +59,7 @@ public class Base {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		return destFilePath;
 	}
 	
 	public WebDriver getDriver()

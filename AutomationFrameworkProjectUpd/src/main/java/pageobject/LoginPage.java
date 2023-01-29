@@ -18,13 +18,13 @@ public class LoginPage{
 	}
 	
 	@FindBy(name="email")
-	WebElement emailInput;
+	private WebElement emailInput;
 	
 	@FindBy(name="password")
-	WebElement passwordInput;
+	private WebElement passwordInput;
 	
 	@FindBy(xpath="//input[@type='submit']")
-	WebElement loginBtn;
+	private WebElement loginBtn;
 	
 	
 	public HomePage loinToApplication(String email, String password)

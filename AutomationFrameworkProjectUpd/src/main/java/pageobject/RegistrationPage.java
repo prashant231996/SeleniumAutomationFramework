@@ -16,31 +16,31 @@ public class RegistrationPage {
 	}
 	
 	@FindBy(name="firstname")
-	WebElement name;
+	private WebElement name;
 	
 	@FindBy(name="lastname")
-	WebElement lastName;
+	private WebElement lastName;
 	
 	@FindBy(id="input-email")
-	WebElement email;
+	private WebElement email;
 	
 	@FindBy(id="input-telephone")
-	WebElement telePhone;
+	private WebElement telePhone;
 	
 	@FindBy(id="input-password")
-	WebElement pwdInput;
+	private WebElement pwdInput;
 	
 	@FindBy(id="input-confirm")
-	WebElement confpwd;
+	private WebElement confpwd;
 	
     @FindBy(xpath="//input[@value='0']")
-    WebElement radioBtn;
+    private WebElement radioBtn;
     
     @FindBy(xpath = "//input[@name='agree']")
-    WebElement agreeChkBox;
+    private WebElement agreeChkBox;
     
     @FindBy(css = "input[value='Continue']")
-    WebElement continueBtn;
+    private WebElement continueBtn;
     
     public void doRegistration(String firstname,String LastName,String emailInput, String phoneNo,String pwd)
     {

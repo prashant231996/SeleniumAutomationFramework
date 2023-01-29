@@ -15,13 +15,13 @@ public class HomePage {
 	}
 	
 	@FindBy(xpath="//a[@title='My Account']")
-	WebElement myAccountBtn;
+	private WebElement myAccountBtn;
 	
 	@FindBy(linkText = "Logout")
-	WebElement logoutBtn;
+	private WebElement logoutBtn;
 	
 	@FindBy(linkText = "Your Store")
-	WebElement YourStoreLabel;
+	private WebElement YourStoreLabel;
 	
 	public void logoutFromApplication()
 	{

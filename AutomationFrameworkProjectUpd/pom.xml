@@ -41,7 +41,7 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>6.9.10</version>
-    <scope>test</scope>
+    <scope>compile</scope>
 </dependency>
 
 <dependency>
@@ -73,6 +73,28 @@
     <artifactId>log4j-core</artifactId>
     <version>2.19.0</version>
   </dependency>
+  
+  <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>4.0.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>7.11.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>7.11.0</version>
+</dependency>
+
 	</dependencies>
 	<build>
   <plugins>
@@ -82,7 +104,7 @@
         <version>3.0.0-M5</version>
          <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
+            <suiteXmlFile>testng2.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>  

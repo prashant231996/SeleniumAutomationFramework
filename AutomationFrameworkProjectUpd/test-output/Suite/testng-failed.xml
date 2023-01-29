@@ -1,38 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
-  <listeners>
-    <listener class-name="listner.listners"/>
-  </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="tests.LoginTest">
-        <methods>
-          <include name="loginTest"/>
-        </methods>
-      </class> <!-- tests.LoginTest -->
-      <class name="tests.RegistrationTest">
-        <methods>
-          <exclude name="doRegistrationTest"/>
-        </methods>
-      </class> <!-- tests.RegistrationTest -->
+      <class name="runner.TestRunner"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Test(failed)" parallel="none">
-    <classes>
-      <class name="tests.LoginTest">
-        <methods>
-          <include name="loginTest" invocation-numbers="1"/>
-          <include name="initialiseDriver"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- tests.LoginTest -->
-      <class name="tests.RegistrationTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="initialiseDriver"/>
-        </methods>
-      </class> <!-- tests.RegistrationTest -->
-    </classes>
-  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
