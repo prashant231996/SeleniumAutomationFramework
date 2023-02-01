@@ -37,6 +37,7 @@ public class StepDefination extends Base{
 		Assert.assertTrue(homepage.loginSuccess(), "Failed to login to application");
 	}
 	
+	//@After Hook run after each test scenario
 	@After
 	public void tearDown()
 	{
